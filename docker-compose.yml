@@ -1,0 +1,10 @@
+services:
+  fastapi-app:
+    build:
+      context: .
+    ports:
+      - "8000:8000"
+    environment:
+      - POETRY_VIRTUALENVS_CREATE=false
+    command: python main.py
+    restart: unless-stopped

@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "testrest"
+version = "0.1.0"
+description = ""
+authors = ["raulett <raulett@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = "^0.115.7"
+uvicorn = "^0.34.0"
+pandas = "^2.2.3"
+geopandas = "^1.0.1"
+gpxpy = "^1.6.2"
+fiona = "^1.10.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
