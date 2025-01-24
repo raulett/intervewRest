@@ -4,7 +4,9 @@ services:
       context: .
     ports:
       - "8000:8000"
+    volumes:
+      - .:/app
     environment:
       - POETRY_VIRTUALENVS_CREATE=false
-    command: python main.py
+    command: poetry run python main.py
     restart: unless-stopped
